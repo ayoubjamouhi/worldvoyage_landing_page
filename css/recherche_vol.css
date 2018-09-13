@@ -1,0 +1,478 @@
+@import url("helpers.css");
+:root{
+  --padding-list-right: 10px;
+}
+.container-fluid{
+  width: 96%;
+}
+main {
+  background-color: var(--pleinciel-main-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main section.filter {
+  text-align: center;
+  display: none;
+  padding-bottom: 5px;
+}
+main section.filter button {
+  background-color: #FCDC12;
+  border: 1px solid #e1a2a2;
+  padding: 3px 15px;
+  border-radius: 14%;
+  color: #953838;
+  box-shadow: -1px 1px 4px 1px rgba(176, 169, 169, 0.7);
+  font-style: italic;
+  cursor: pointer;
+  transition: color 2s linear;
+}
+main section.search {
+  margin: 10px 0;
+}
+main section.search .search-tab {
+  background-color: var(--search-color);
+  color: var(--secondary-color);
+}
+
+main section.search .search-tab input[type=radio] {
+  display: none;
+}
+
+main section.search .search-tab .label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 11px 78px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--secondary-color);
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+main section.search .search-tab .label i {
+  color: var(--secondary-color);
+}
+
+main section.search .search-tab label {
+  text-transform: uppercase;
+}
+
+main section.search .search-tab label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+main section.search .search-tab input:checked + label {
+  border: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 11px 78px;
+  /*border-top-left-radius: 17px*/
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+
+main section.search .search-tab .box-bottom-info-content1 {
+  /*border: 1px solid #CCC;*/
+  padding: 10px;
+  display: none;
+}
+
+main section.search .search-tab .box-bottom-info-content1 > div > div {
+  padding: 10px;
+  background-color: #EEEDF2;
+  box-shadow: 2px 2px 2px #dedede;
+}
+
+main section.search .search-tab .box-bottom-info-content1 .column1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 6px;
+  margin-bottom: 6px;
+}
+
+main section.search .search-tab form button {
+  background-color: var(--fourty-color);
+  border: 0;
+}
+
+main section.search .search-tab form button:hover {
+  background-color: var(--theird-color);
+}
+main section.search .search-tab .box-bottom-info-content2 {
+  /*border: 1px soli d #CCC;*/
+  padding: 10px;
+  display: none;
+}
+main section.search form input,main section.search form select{
+  border-radius: 0;
+  border: 0;
+}
+main section.search form input[type="date"], main section.search form select{
+  padding-bottom: 4px;
+}
+
+/* Start List */
+main section.list{
+	
+}
+main section.list .row{
+	margin:0;
+}
+main section.list .search-bar{
+  padding-left: 0
+}
+main section.list .search-bar .affiner{
+  background-color: var(--primary-color);
+  padding: 29px 5px;
+}
+main section.list .search-bar .affiner h3{
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+main section.list .search-bar .prix{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .prix .top{
+  margin-top: 10px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold;
+}
+main section.list .search-bar .prix .slider-range{
+  padding: var(--padding-list-right);
+}
+/* Start compagnie */
+main section.list .search-bar .compagnie{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .compagnie .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .compagnie .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .compagnie .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .compagnie .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .compagnie .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End compagnie */
+/* Start aeroport-origin */
+main section.list .search-bar .aeroport-origin{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .aeroport-origin .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .aeroport-origin .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .aeroport-origin .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .aeroport-origin .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .aeroport-origin .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End aeroport-origin */
+/* Start aeroport-destination */
+main section.list .search-bar .aeroport-destination{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .aeroport-destination .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .aeroport-destination .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .aeroport-destination .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .aeroport-destination .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .aeroport-destination .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End aeroport-origin */
+/* Start classe */
+main section.list .search-bar .classe{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .classe .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .classe .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .classe .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .classe .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .classe .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End classe */
+/* Start escale */
+main section.list .search-bar .escale{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .escale .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .escale .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .escale .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .escale .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .escale .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End escale */
+/* End Left List */
+
+/* Start Right list */
+main section.list .list-vol{
+  padding: 0;
+}
+main section.list .list-vol .trier{
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+  border: 1px solid #e7e7e7;
+}
+main section.list .list-vol .trier .etablissement{
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 4px;                   
+}
+main section.list .list-vol .trier .trier-select{
+
+}
+main section.list .list-vol .trier .trier-select span{
+  color: var(--rose-star-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 2%;
+}
+main section.list .list-vol .trier .trier-select select{
+  width: 75%;
+  height: 40px;
+}
+main section.list .list-vol .trier .bars{
+  padding: 0;
+}
+main section.list .list-vol .vol {
+  margin-top: 10px
+}
+main section.list .list-vol .vol .top {
+  background-color: var(--pleinciel-liste-top-color);
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  border-top: 3px dotted #bec1c2;
+  border-bottom: 3px dotted #bec1c2;
+}
+main section.list .list-vol .vol .top .prix {
+  color: var(--rose-star-color);
+  font-size: 25px;
+  font-weight: bold
+}
+main section.list .list-vol .vol .top .prix span {
+  font-size: 15px
+}
+main section.list .list-vol .vol .center-top {
+  background-color: var(--secondary-color);
+  color: #666666;
+  padding: 15px 3px;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-bottom: 2px dotted #bec1c2;
+}
+main section.list .list-vol .vol .center-bottom {
+  background-color: var(--secondary-color);
+  color: #666666;
+  padding: 15px 3px;
+  text-transform: capitalize;
+  font-size: 11px;
+  border-bottom: 2px dotted #bec1c2;
+  cursor: pointer;
+}
+main section.list .list-vol .vol .center-bottom .depart {
+  padding: 1px;
+}
+main section.list .list-vol .vol .center-bottom .date {
+  
+}
+main section.list .list-vol .vol .center-bottom .direct {
+  color: var(--rose-star-color);
+}
+main section.list .list-vol .vol .center-bottom .direct .aller{
+  padding-top: 5px;
+}
+main section.list .list-vol .vol .center-bottom .direct .retour{
+  padding-top: 16px;
+}
+main section.list .list-vol .vol .center-bottom .heure {
+
+}
+main section.list .list-vol .vol .center-bottom .heure .aller{
+  padding-top: 5px;
+}
+main section.list .list-vol .vol .center-bottom .heure .retour{
+  padding-top: 16px;
+}
+
+main section.list .list-vol .vol .center-bottom .choisir{
+}
+main section.list .list-vol .vol .center-bottom .choisir button{
+  margin-top: 18px;
+  background-color: #FCDC12;
+  border: 1px solid #e1a2a2;
+  padding: 3px 15px;
+  border-radius: 14%;
+  color: #953838;
+  box-shadow: -1px 1px 4px 1px rgba(176, 169, 169, 0.7);
+  font-style: italic;
+  cursor: pointer;
+  transition: color 2s linear
+} 
+main section.list .list-vol .vol .center-bottom .choisir button:hover{
+  color: red;
+}     
+main section.list .list-vol .vol .center-bottom:hover {
+  background-color: #d8ebf5;
+}
+main section.list .list-vol .vol .total {
+  background-color: var(--pleinciel-liste-top-color);
+  padding: 28px 10px;
+}
+main section.list .list-vol .vol .total .prix{
+  color: var(--rose-star-color);
+  font-size: 25px;
+  font-weight: bold
+}
+main section.list .list-vol .vol .total .prix span{
+  font-size: 15px
+}
+/* End Right list */
+/* Responsive Mobile */
+@media (max-width: 575.98px) {
+  /* Start Boostrap */
+  /* End Boostrap */
+  main section.filter {
+    display: block;
+  }
+  main section.list .search-bar .affiner {
+    padding: 10px;
+  }
+  main section.list .search-bar .affiner h3 {
+    font-size: 15px
+  }
+  main section.list .search-bar{
+    display: none;
+    z-index: 999
+  }
+  main section.list .list-vol .vol .center-bottom {
+    font-size: 8px;
+    padding: 6px 0;
+  }
+  main section.list .list-vol .vol .center-bottom .compagnie {
+    padding-bottom: 12px
+  }
+  main section.list .list-vol .vol .center-bottom .depart {
+    padding: 1px;
+  }
+  main section.list .list-vol .vol .center-bottom .depart i{
+    color: var(--rose-star-color);
+  }
+  main section.list .list-vol .vol .center-bottom .choisir {
+    text-align: center;
+  }
+  main section.list .list-vol .vol .center-bottom .choisir button {
+    margin-top: 0
+  }
+}

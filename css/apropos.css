@@ -1,0 +1,101 @@
+@import url("helpers.css");
+/* Boostrap */
+.container-fluid{
+  width: 83%;
+}
+/* Boostrap */
+main {
+  color: red;
+}
+main section.top-main {
+  position: relative;
+  background: url("../images/about-us.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+main section.top-main .text-img {
+  bottom: 30px;
+  left: 10%;
+  text-transform: uppercase;
+  width: 26%;
+  padding-top: 66%;
+  padding-left: 60px;
+}
+main section.top-main .text-img .top {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--theird-color);
+}
+main section.top-main .text-img .top a {
+  font-size: 26px;
+  color: var(--secondary-color);
+}
+main section.top-main .text-img .top a:hover {
+  color: var(--theird-color);
+  text-decoration: none;
+}
+main section.top-main .text-img .top i {
+  padding: 0px 7px;
+}
+main section.top-main .text-img .bottom h2 {
+  color: #000;
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 21px;
+}
+main section.bottom-main{
+  padding: 100px 0;
+}
+main section.bottom-main h3{
+
+}
+main section.bottom-main p{
+  color: var(--footer-main-color);
+  line-height: 26px
+}
+main section.bottom-main .image-bottom-main{
+
+}
+main section.bottom-main .image-bottom-main img{
+  width: 100%;
+
+}
+/* End Main */
+/* Responsive Mobile */
+@media (max-width: 575.98px) {
+  /* STart Boostrap */
+  .navbar-light .navbar-nav .nav-link{
+    line-height: 50px;
+    text-align: center
+  }
+  /* End Boostrap */
+  header section.top-header .top-bar{
+    display: none;
+  }
+  header section.bottom-header .logo{
+    float: right;
+  }
+  header section.bottom-header .logo img{
+    width: 100%
+  }
+  header section.bottom-header nav{
+    float: right;
+    width: 100%
+  }
+  main section.top-main .text-img{
+    width: 100%;
+    padding-top: 19px;
+  }
+  main section.top-main .text-img .top{
+    width: 50%
+  }
+  main section.top-main .text-img .top i,main section.top-main .text-img .top .que-sommes-nous{
+    display: none;
+  }
+  main section.top-main .text-img .bottom h2{
+    font-size: 36px;
+  }
+  main section.bottom-main h3,main section.bottom-main p{
+    text-align: center
+  }
+}
+/*# sourceMappingURL=apropos.css.map */

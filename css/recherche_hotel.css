@@ -1,0 +1,546 @@
+@import url("helpers.css");
+:root{
+  --padding-list-right: 10px;
+}
+.container-fluid{
+  width: 96%;
+}
+main {
+  background-color: var(--pleinciel-main-color);
+}
+main section.search {
+  margin: 10px 0;
+}
+main section.search .search-tab {
+  background-color: var(--search-color);
+  color: var(--secondary-color);
+}
+
+main section.search .search-tab .box-bottom-info-content1 {
+  padding: 10px;
+}
+main section.search .search-tab .box-bottom-info-content1 label{
+
+}
+main section.search .search-tab .box-bottom-info-content1 > div > div {
+  padding: 10px;
+  background-color: #EEEDF2;
+  box-shadow: 2px 2px 2px #dedede;
+}
+
+main section.search .search-tab .box-bottom-info-content1 .column1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 6px;
+  margin-bottom: 6px;
+}
+
+main section.search .search-tab form button {
+  background-color: var(--fourty-color);
+  border: 0;
+}
+
+main section.search .search-tab form button:hover {
+  background-color: var(--theird-color);
+}
+main section.search form input,main section.search form select{
+  border-radius: 0;
+  border: 0;
+}
+main section.search form input[type="date"], main section.search form select{
+  padding-bottom: 4px;
+}
+/* Start filter */
+main section.filter {
+  text-align: right;
+  display: none;
+}
+main section.filter button {
+
+}
+/* End filter */
+/* Start List */
+main section.list{
+	
+}
+main section.list .row{
+	margin:0;
+}
+main section.list .search-bar{
+  padding-left: 0;
+  margin-bottom: 10px
+}
+main section.list .search-bar .affiner{
+  background-color: var(--primary-color);
+  padding: 29px 5px;
+}
+main section.list .search-bar .affiner h3{
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+main section.list .search-bar .recherche-hotel{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .recherche-hotel .top{
+  margin-top: 10px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .recherche-hotel form{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .recherche-hotel form input{
+  border-radius: 0
+}
+main section.list .search-bar .prix{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .prix .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold;
+}
+main section.list .search-bar .prix .slider-range{
+  padding: var(--padding-list-right);
+}
+/* Start etoile */
+main section.list .search-bar .etoile{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .etoile .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .etoile .stars{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .etoile .stars input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .etoile .stars input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .etoile .stars label{
+
+}
+main section.list .search-bar .etoile .stars label i{
+  color: var(--rose-star-color);
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End etoile */
+/* Start favoris */
+main section.list .search-bar .favoris{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .favoris .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .favoris .bottom{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .favoris .bottom input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .favoris .bottom input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .favoris .bottom label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End favoris */
+/* Start regime */
+main section.list .search-bar .regime{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .regime .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .regime .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .regime .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .regime .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .regime .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End regime */
+/* Start situation */
+main section.list .search-bar .situation{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .situation .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .situation .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .situation .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .situation .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .situation .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End situation */
+/* Start hebergement */
+main section.list .search-bar .hebergement{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .hebergement .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .hebergement .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .hebergement .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .hebergement .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .hebergement .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End hebergement */
+/* Start equipements  */
+main section.list .search-bar .equipements{
+  background-color: var(--secondary-color)
+}
+main section.list .search-bar .equipements .top{
+  margin-top: 5px;
+  background-color: var(--pleinciel-liste-top-color);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  padding: 5px 10px;
+  font-weight: bold
+}
+main section.list .search-bar .equipements .types{
+  padding: var(--padding-list-right);
+}
+main section.list .search-bar .equipements .types input{
+  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+  color: var(--theird-color);
+}
+main section.list .search-bar .equipements .types input:checked{
+  background-color: var(--theird-color)
+}
+main section.list .search-bar .equipements .types label{
+  vertical-align: super;
+  font-size: 18px;
+}
+/* End equipements */
+/* End Left List */
+
+/* Start Right list */
+main section.list .list-hotel{
+  padding: 0;
+}
+main section.list .list-hotel .trier{
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+}
+main section.list .list-hotel .trier .etablissement{
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 4px;                   
+}
+main section.list .list-hotel .trier .trier-select{
+
+}
+main section.list .list-hotel .trier .trier-select span{
+  color: var(--rose-star-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 2%;
+}
+main section.list .list-hotel .trier .trier-select select{
+  width: 75%;
+  height: 40px;
+}
+main section.list .list-hotel .trier .bars{
+  padding: 0;
+}
+main section.list .list-hotel .trier .bars a{
+
+}
+main section.list .list-hotel .trier .bars a i.bar-hor{
+  color: var(--rose-star-color);
+  font-size: 38px;
+  padding-right: 3px; 
+  border-right: 3px solid var(--pleinciel-liste-top-color)
+}
+main section.list .list-hotel .trier .bars a i.bar-point{
+  color: var(--primary-color);
+  font-size: 38px;
+  padding-right: 3px; 
+  border-right: 3px solid var(--pleinciel-liste-top-color)
+}
+main section.list .list-hotel .trier .bars a i.maps{
+  color: var(--primary-color);
+  font-size: 38px;
+}
+/* End Right list */
+
+main section.list .list-hotel .hotel{
+  background-color: var(--secondary-color);
+  margin-top: 10px
+}
+main section.list .list-hotel .hotel div > div {
+  padding: 0;
+}
+main section.list .list-hotel .hotel .left{
+
+}
+main section.list .list-hotel .hotel .left img{
+  
+}
+main section.list .list-hotel .hotel .center{
+  padding: 5px 20px;
+  position: relative;
+}
+main section.list .list-hotel .hotel .center h1{
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 23px;
+}
+main section.list .list-hotel .hotel .center .etoile{
+  
+}
+main section.list .list-hotel .hotel .center .etoile i{
+  color: var(--rose-star-color);
+
+}
+main section.list .list-hotel .hotel .center .map{
+  color: var(--rose-star-color);
+}
+main section.list .list-hotel .hotel .center .info-room .left{
+  background-color: var(--pleinciel-liste-top-color);
+  padding: 10px;
+  color: var(--rose-star-color);
+  text-transform: uppercase;
+}
+main section.list .list-hotel .hotel .center .info-room .left i{
+  
+}
+main section.list .list-hotel .hotel .center .info-room .left span{
+  text-align: right;
+  font-size: 13px
+}
+main section.list .list-hotel .hotel .center .adresse{
+  font-size: 11px
+}
+main section.list .list-hotel .hotel .center .bookmarks{
+  position: absolute;
+  bottom: 17px;
+  right: 0;
+}
+main section.list .list-hotel .hotel .center .bookmarks span{
+  
+}
+main section.list .list-hotel .hotel .center .bookmarks i{
+  font-size: 20px;
+  padding-right: 5px;
+}
+main section.list .list-hotel .hotel .right{
+  padding: 20px 15px;
+}
+main section.list .list-hotel .hotel .right .inside{
+  border: 1px solid var(--rose-star-color);
+  padding: 80px 5px;
+  text-align: center;
+  position: relative;
+}
+main section.list .list-hotel .hotel .right .inside div.prix{
+  color: #000;
+  font-weight: bold;
+  margin: auto;
+  width: 100%
+}
+main section.list .list-hotel .hotel .right .inside div.prix-pour{
+  font-size: 12px;
+}
+main section.list .list-hotel .hotel .right .inside button{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: var(--rose-star-color);
+  border: 0;
+  padding: 9%;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  transition: color 1s linear;
+  transition: background-color 1s linear;
+  cursor: pointer;
+}
+main section.list .list-hotel .hotel .right .inside button:hover{
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+/* Responsive Mobile */
+@media (max-width: 575.98px) {
+  /* Start Boostrap */
+  /* End Boostrap */
+  main section.search .search-tab .box-bottom-info-content1 label{
+    display: block;
+    text-align: center;
+  }
+  main section.search .search-tab form button {
+    display: block;
+    margin: auto;
+  }
+  main section.list .search-bar .affiner {
+    padding: 19px 3px;
+  }
+  main section.list .search-bar .affiner h3 {
+    font-size: 15px;
+  }
+  main section.list .list-hotel .trier .etablissement {
+    text-align: center;
+  }
+  main section.list .list-hotel .trier .trier-select {
+    margin-bottom: 7px;
+  }
+  main section.list .list-hotel .trier .trier-select span {
+    display: block;
+    text-align: center;
+  }
+  main section.list .list-hotel .trier .trier-select select {
+    display: block;
+    margin: auto;
+  }
+  main section.list .list-hotel .trier .bars {
+    text-align: center;
+  }
+  main section.list .list-hotel .hotel .center {
+    text-align: center;
+  }
+  main section.list .list-hotel .hotel .center h1{
+
+  }
+  main section.list .list-hotel .hotel .center .bookmarks {
+    display: none;
+  }
+  main section.list .list-hotel .hotel .right .inside {
+    padding: 0 0 77px 5px
+  }
+  main section.list .list-hotel .hotel .center .info-room .left {
+    margin-bottom: 5px;
+  }
+}
+/* Responsive Tablet */
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    line-height: 47px;
+  }
+  header section.bottom-header nav {
+    padding-top: 18px
+  }
+  main section.filter {
+    display: block;
+    padding-bottom: 5px;
+    text-align: center;
+    z-index: 999
+  }
+  main section.filter button {
+    background-color: #FCDC12;
+    border: 1px solid #e1a2a2;
+    padding: 3px 15px;
+    border-radius: 14%;
+    color: #953838;
+    box-shadow: -1px 1px 4px 1px rgba(176, 169, 169, 0.7);
+    font-style: italic;
+    cursor: pointer;
+    transition: color 2s linear;
+  }
+  main section.list .search-bar {
+    display: none;
+  }
+  main section.list .list-hotel .trier .etablissement {
+    text-align: center;
+    margin: 15px;
+    font-size: 25px
+  }
+  main section.list .list-hotel .hotel .center .info-room .left {
+    margin-bottom: 5px;
+  }
+}

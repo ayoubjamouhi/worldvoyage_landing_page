@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Demo CSS -->
+  <link rel="stylesheet" href="flexSlider/css/flexslider.css" type="text/css" media="screen" />
+</head>
+<body class="loading">
+      <div class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="flexSlider/images/plane-841441.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="flexSlider/images/parallax-2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="flexSlider/images/p-17.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="flexSlider/images/oia-416136.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </div>
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="flexSlider/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      // SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url("helpers.css");
+/* Boostrap */
+.container-fluid{
+  width: 83%;
+}
+/* Boostrap */
+
+/* Start Main */
+main{
+
+}
+main .top-main{
+  background: url("../images/explore.jpg");
+  background-repeat: repeat;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  background-size: cover; 
+  min-height: 939px;
+  padding: 94px;
+}
+main .top-main .form-contact{
+	background-color: var(--theird-color);
+	opacity: 0.9;
+	padding: 45px;
+}
+main .top-main .form-contact h1{
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+}
+main .top-main .form-contact h4{
+	color: var(--fourty-color);
+	font-size: 20px;
+}
+main .top-main form{
+
+}
+main .top-main form label{
+	text-transform: uppercase;
+	color: var(--fourty-color);
+	font-weight: bold
+}
+main .top-main form label i{
+	color: red;
+	font-size: 10px;
+}
+main .top-main form input{
+	border-radius: 0
+}
+main .top-main form textarea {
+	border-radius: 0
+}
+main .top-main form button{
+	background-color: var(--h3-color);
+	border: 0
+}
+/* End Main */
+/* Responsive Mobile */
+@media (max-width: 575.98px) {
+	main .top-main {
+		padding: 0;
+		padding-top: 5px;
+	}
+	main .top-main .form-contact {
+		padding: 9px;
+	}
+}
+/*# sourceMappingURL=apropos.css.map */
