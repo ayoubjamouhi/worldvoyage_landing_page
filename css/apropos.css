@@ -9,7 +9,7 @@ main {
 }
 main section.top-main {
   position: relative;
-  background: url("../images/about-us.jpg");
+  /*background: url("../images/about-us.jpg");*/
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -18,7 +18,7 @@ main section.top-main .text-img {
   left: 10%;
   text-transform: uppercase;
   width: 26%;
-  padding-top: 66%;
+  /*padding-top: 66%;*/
   padding-left: 60px;
 }
 main section.top-main .text-img .top {

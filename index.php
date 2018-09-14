@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+  <title>Landing Page</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <script src="float-panel.js"></script>
+</head>
+<body>
 <?php include('header.php') ?>
 <!-- Start Main -->
 <main>
@@ -135,11 +147,15 @@
            <div class="row coups-de-coeur-items">
                <div class="col-md-4 coups-de-coeur-row">
                     <a href="#">
-                        <div class="image">
-                           <img src="images/coups-coeur-item.jpeg">
-                        </div>
-                        <div class="titre">Lixus Beach Resort</div>
-                        <div class="prix">à partir de <span class="number">1 350 </span><span class="dh">MAD</span></div> 
+                      <div class="image">
+                         <img src="images/coups-coeur-item.jpeg">
+                      </div>
+                      <div class="titre">Lixus Beach Resort</div>
+                      <div class="prix">
+                        <span class="apartir">à partir de</span> 
+                        <span class="number">1 350 </span>
+                        <span class="dh">MAD</span>
+                      </div> 
                     </a>
                </div>
                <div class="col-md-4 coups-de-coeur-row">
@@ -176,8 +192,8 @@
                 </div>
                 <div class="city">Berlin</div>
                 <div class="row continent-type">
-                  <div class="col-md-6 continent">Europe</div>
-                  <div class="col-md-6 type">Cultural</div>
+                  <div class="col-md-6 col-6 continent">Europe</div>
+                  <div class="col-md-6 col-6 type">Cultural</div>
                 </div>
                 <div class="bottom-item">
                   <div class="text-item">

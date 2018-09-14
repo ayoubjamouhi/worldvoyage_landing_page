@@ -237,12 +237,38 @@ footer .bottom-footer ul.social-box li a:hover{
 
 }*/
 /* End footer */
-
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
 /* Responsive Mobile */
 @media (max-width: 575.98px) {
   /* End Boostrap */
   .navbar-light .navbar-nav .nav-link {
   	text-align: center;
+  }
+  header section.all-header {
+  	position: relative;
   }
   header section.top-header .top-bar {
     display: none;
@@ -257,6 +283,9 @@ footer .bottom-footer ul.social-box li a:hover{
     float: right;
     width: 74%;
     margin-top: 26px;
+  }
+  header section.slider {
+  	display: none
   }
   footer section.top-footer h4 {
     text-align: center;

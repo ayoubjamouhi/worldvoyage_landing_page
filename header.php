@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Landing Page</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-</meta>
-</head>
-<body>
 <!-- Start Header -->
 <header>
   <section class="all-header">
@@ -49,7 +37,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto row">
                 <li class="nav-item ">
-                  <a class="nav-link" href="apropos.html">Qui sommes-nous?</a>
+                  <a class="nav-link" href="apropos.php">Qui sommes-nous?</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="dmc.html">DMC</a>

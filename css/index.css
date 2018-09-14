@@ -138,10 +138,12 @@ main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .titre:hov
 
 main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix {
   padding: 4px;
-  color: var(--fourty-color);
   background-color: #FFF;
   text-align: center;
   text-transform: uppercase;
+}
+main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span.apartir {
+  color: var(--fourty-color);
 }
 main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span {
   color: var(--header-color);
@@ -405,6 +407,9 @@ main section.meilleurs-ventes .ventes-items .ventes-row .prix span.number {
     text-align: center;
   }
   /* End Boostrap */
+  main section.search {
+    padding: 10px 0 ;
+  }
   main section.search .search-tab input:checked + label {
     width: 100%;
   }
@@ -419,14 +424,33 @@ main section.meilleurs-ventes .ventes-items .ventes-row .prix span.number {
     text-align: center;
     display: block;
   }
+  main section.coups-de-coeur {
+    padding: 10px 0;
+  }
   main section.coups-de-coeur h3 {
     text-align: center;
   }
   main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row {
     margin-bottom: 5px;
   }
+  main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span.apartir {
+    display: block;
+  }
   main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .titre {
     font-size: 21px;
+  }
+  main section.promotions {
+    padding: 0;
+  }
+  main section.promotions .promotion-items .promotion-row .city {
+    text-align: center;
+  }
+  main section.promotions .promotion-items .promotion-row .bottom-item button {
+    margin: auto;
+    display: block;
+  }
+  main section.one-promotion .info {
+    padding: 10px 0;
   }
   main section.meilleurs-ventes h3 {
     text-align: center;
