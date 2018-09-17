@@ -28,7 +28,7 @@
     <section class="bottom-header">
       <div class="container">
           <div class="logo">
-              <a href="/"><img src="images/logo_world_voyage.png"></a>
+              <a href="index.php"><img src="images/logo_world_voyage.png"></a>
           </div>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                   <a class="nav-link" href="apropos.php">Qui sommes-nous?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="dmc.html">DMC</a>
+                  <a class="nav-link" href="dmc.php">DMC</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">à la carte</a>

@@ -10,6 +10,68 @@ main {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+main section.search {
+  padding: 13px 0px;
+}
+main section.search .search-tab {
+  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid #CCC;
+}
+main section.search .search-tab input[type=radio] {
+  display: none;
+}
+main section.search .search-tab .label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 11px 78px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+main section.search .search-tab .label i {
+  color: #000;
+}
+main section.search .search-tab label {
+  text-transform: uppercase;
+  color: #000
+}
+main section.search .search-tab label:hover {
+  color: #888;
+  cursor: pointer;
+}
+main section.search .search-tab input:checked + label {
+  border: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 11px 78px;
+  /*border-top-left-radius: 17px*/
+}
+main section.search .search-tab form button {
+  /*background-color: rgba(0,0,0,0.3);*/
+  background: transparent;
+  border: 1px solid rgba(0,0,0,1);
+  color: rgba(0,0,0,1);
+/*  border: 0;
+*/  border-radius: 0
+}
+main section.search .search-tab form button:hover {
+  background-color: var(--theird-color);
+  color: var(--secondary-color);
+}
+main section.search .search-tab .box-bottom-info-content2 {
+  padding: 10px;
+}
+main section.search form input,main section.search form select{
+  border-radius: 0;
+  border: 1px solid #CCC;
+}
+main section.search form input[type="date"], main section.search form select{
+  padding-bottom: 4px;
+}
 main section.filter {
   text-align: center;
   display: none;
@@ -26,99 +88,6 @@ main section.filter button {
   cursor: pointer;
   transition: color 2s linear;
 }
-main section.search {
-  margin: 10px 0;
-}
-main section.search .search-tab {
-  background-color: var(--search-color);
-  color: var(--secondary-color);
-}
-
-main section.search .search-tab input[type=radio] {
-  display: none;
-}
-
-main section.search .search-tab .label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 11px 78px;
-  font-weight: 600;
-  text-align: center;
-  color: var(--secondary-color);
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-}
-
-main section.search .search-tab .label i {
-  color: var(--secondary-color);
-}
-
-main section.search .search-tab label {
-  text-transform: uppercase;
-}
-
-main section.search .search-tab label:hover {
-  color: #888;
-  cursor: pointer;
-}
-
-main section.search .search-tab input:checked + label {
-  border: 1px solid var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  padding: 11px 78px;
-  /*border-top-left-radius: 17px*/
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
-  display: block;
-}
-
-main section.search .search-tab .box-bottom-info-content1 {
-  /*border: 1px solid #CCC;*/
-  padding: 10px;
-  display: none;
-}
-
-main section.search .search-tab .box-bottom-info-content1 > div > div {
-  padding: 10px;
-  background-color: #EEEDF2;
-  box-shadow: 2px 2px 2px #dedede;
-}
-
-main section.search .search-tab .box-bottom-info-content1 .column1 {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-gap: 6px;
-  margin-bottom: 6px;
-}
-
-main section.search .search-tab form button {
-  background-color: var(--fourty-color);
-  border: 0;
-}
-
-main section.search .search-tab form button:hover {
-  background-color: var(--theird-color);
-}
-main section.search .search-tab .box-bottom-info-content2 {
-  /*border: 1px soli d #CCC;*/
-  padding: 10px;
-  display: none;
-}
-main section.search form input,main section.search form select{
-  border-radius: 0;
-  border: 0;
-}
-main section.search form input[type="date"], main section.search form select{
-  padding-bottom: 4px;
-}
-
 /* Start List */
 main section.list{
 	

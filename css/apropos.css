@@ -10,8 +10,8 @@ main {
 main section.top-main {
   position: relative;
   /*background: url("../images/about-us.jpg");*/
-  background-repeat: no-repeat;
-  background-size: auto;
+  /*background-repeat: no-repeat;*/
+  /*background-size: auto;*/
 }
 main section.top-main .text-img {
   bottom: 30px;
@@ -77,10 +77,10 @@ main section.bottom-main .image-bottom-main img{
   header section.bottom-header .logo img{
     width: 100%
   }
-  header section.bottom-header nav{
+/*  header section.bottom-header nav{
     float: right;
     width: 100%
-  }
+  }*/
   main section.top-main .text-img{
     width: 100%;
     padding-top: 19px;

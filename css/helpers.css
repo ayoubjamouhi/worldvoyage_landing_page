@@ -54,6 +54,9 @@
 .list-group-item{
 	border: 0
 }
+.navbar-light .navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
 /* End Override Bootstrap */
 
 /* Start Header */
@@ -140,6 +143,7 @@ header section.bottom-header nav{
 	width: 75%;
 	float: left;
 	padding:0;
+	/*margin-top: 22px;*/
 }
 header section.bottom-header nav .list-navbar{
 	
@@ -281,7 +285,7 @@ footer .bottom-footer ul.social-box li a:hover{
   }
   header section.bottom-header nav {
     float: right;
-    width: 74%;
+    width: 75%;
     margin-top: 26px;
   }
   header section.slider {
@@ -299,7 +303,7 @@ footer .bottom-footer ul.social-box li a:hover{
 }
 @media (max-width: 1199.98px) {
 	.navbar-light .navbar-nav .nav-link {
-		font-size: 14px;
+		font-size: 13px;
 		padding: 0 7px;
 	}
 }

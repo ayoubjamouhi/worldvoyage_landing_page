@@ -7,13 +7,13 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/all.min.css" rel="stylesheet" type="text/css">
   <link href="css/index.css" rel="stylesheet" type="text/css">
-  <script src="float-panel.js"></script>
+  <script src="js/float-panel.js"></script>
 </head>
 <body>
 <?php include('header.php') ?>
 <!-- Start Main -->
 <main>
-    <section class="search">
+    <section class="search slideanim">
         <div class="container-fluid">
             <div class="search-tab">
                 <input id="tab1" type="radio" name="tabs" checked>
@@ -22,7 +22,7 @@
                 <input id="tab2" type="radio" name="tabs">
                 <label class="label" for="tab2"><i class="fas fa-plane"></i>  Vols</label> 
                 <div class="box-bottom-info-content1" id="content1">
-                    <form action="recherche_hotel.html">
+                    <form action="recherche_hotel.php">
                         <div class="form-row">
                             <div class="col-lg-4 col-md-4 col-sm-3 col-xs-1">
                               <label for="validationCustom01">Destination</label>
@@ -80,7 +80,7 @@
                     </form>
                 </div>
                 <div class="box-bottom-info-content2" id="content2">
-                    <form action="recherche_vol.html">
+                    <form action="recherche_vol.php">
                         <div class="form-row">
                             <div class="col-lg-3 col-md-4 col-sm-2 col-xs-1">
                               <label for="validationCustom01">Au départ de</label>
@@ -141,7 +141,7 @@
             
         </div>
     </section>
-    <section class="coups-de-coeur">
+    <section class="coups-de-coeur slideanim">
         <div class="container-fluid">
            <h3>nos coups de coeur <i class="fas fa-heart"></i></h3>
            <div class="row coups-de-coeur-items">
@@ -179,7 +179,7 @@
            </div> 
         </div>
     </section>
-    <section class="promotions">
+    <section class="promotions slideanim">
         <div class="container-fluid">
           <h1>top promotions</h1>
           <h4>best travel packages available</h4>
@@ -239,7 +239,7 @@
             </div> 
         </div>
     </section>
-    <section class="one-promotion">
+    <section class="one-promotion slideanim">
       <div class="info">
         <h1 class="type">summer promotion</h1>
         <hr>
@@ -248,7 +248,7 @@
         <button class="btn details">more details</button>  
       </div>
     </section>    
-    <section class="meilleurs-ventes">
+    <section class="meilleurs-ventes slideanim">
         <div class="container">
            <h3>NOS MEILLEURES VENTES <i class="fas fa-star"></i></h3>
            <div class="row ventes-items">

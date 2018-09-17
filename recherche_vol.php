@@ -11,64 +11,74 @@
 </head>
 <body>
 <!-- Start Header -->
-<header>
-    <section class="top-header">
-        <div class="container">
-            <ul class="list-inline float-right top-bar" >
-                <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="bottom-header">
-        <div class="container-fluid">
-            <div class="logo">
-                <img src="images/logo_world_voyage.png">
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="apropos.html">Qui sommes-nous?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dmc.html">DMC</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">à la carte</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Rejoignez-nous</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nos agences</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-phone-volume"></i>  05 22 31 21 97</a>
-                  </li>
-                </ul>
-                
-              </div>
-            </nav>  
-        </div>
-    </section>
-</header>
+<?php include('header.php') ?>
 <!-- End Header -->
 <!-- Start Main -->
 <main>
+  <section class="search">
+      <div class="container-fluid">
+          <div class="search-tab">
+              <div class="box-bottom-info-content2" id="content2">
+                  <form action="recherche_vol.php">
+                      <div class="form-row">
+                          <div class="col-lg-3 col-md-4 col-sm-2 col-xs-1">
+                            <label for="validationCustom01">Au départ de</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Ville ou aéroport...">
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-2 col-xs-1">
+                            <label for="validationCustom01">À destination de</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Ville ou aéroport...">
+                          </div>
+                          <div class="col-lg-2 col-md-4 col-sm-2 col-xs-1">
+                            <label for="validationCustom01">Date de départ</label>
+                            <input type="date" class="form-control" id="validationCustom01" placeholder="Ville...">
+                          </div>
+                      </div>
+                      <div class="form-row">
+
+                          <div class="col-lg-2 col-md-3 mb-3">
+                            <label for="validationCustom01">Adultes (18+)</label>
+                            <select type="text" class="form-control" id="validationCustom01" placeholder="Ville...">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-1 col-md-3 pull-md-2 mb-3"></div>
+                          <div class="col-lg-2 col-md-3 mb-3">
+                            <label for="validationCustom01">Enfants (0-17)</label>
+                            <select type="text" class="form-control" id="validationCustom01" placeholder="Ville...">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                          <div class="col-lg-2 col-md-4 col-sm-2 col-xs-1 mb-3">
+                            <label for="validationCustom01">Classe souhaitée</label>
+                            <select class="form-control" id="validationCustom01" placeholder="Ville...">
+                                <option disabled="">Cabine...</option>
+                                <option>Indifferent</option>
+                                <option>Economique</option>
+                                <option>Business</option>
+                                <option>First Class</option>
+                            </select>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary" type="submit">Recherche</button>
+                  </form>
+              </div>  
+          </div>   
+      </div>
+  </section>
   <section class="filter">
     <div class="container-fluid">
       <button id="filter">Afficher le Filter</button>
@@ -334,115 +344,6 @@
   </section>
 </main>
 <!-- End Main -->
-<!-- Start footer -->
-<footer>
-    <section class="top-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <h4>Abonnez-vous à notre e-newsletter !</h4>
-                    <p>J'ai lu et j'accepte <span class="charte">la charte de vie privée</span></p>
-                </div>
-                <div class="col-md-6 col-12">
-                    <form class="form-inline form-top-footer right-header">
-                      <div class="form-group input-top-footer">
-                        <input type="text" class="form-control" id="inputPassword2" placeholder="Saissez votre adresse e-mail">
-                      </div>
-                      <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-arrow-right"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bottom-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <h4>Zineb Voyages</h4>
-                    <ul class="list-group list-left">
-                        <li class="list-group-item">
-                            <a href="#">Qui sommes-nous?</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Conditions générales de vente</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Rejoignez-nous</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <h4>Contacts</h4>
-                    <ul class="list-group list-left">
-                        <li class="list-group-item">
-                            <a href="#"><i class="fas fa-phone-volume"></i>  05 22 31 21 97</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#"><i class="fas fa-phone-volume"></i>   hello@gmail.com</a>
-                        </li>
-                        <li class="list-group-item">
-                            <p>
-                                Horaires d'été de nos agences:<br>
-                                Du lundi au vendredi: 9h-20h<br>
-                                Samedi: 9h-15h
-                            </p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>
-                               Horaires du Centre Relation Client:<br>
-                               Du lundi au vendredi: 9h-12h/ 14h30-18<br>
-                               Samedi: 9h-12h
-                           </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center">
-                    <h4>Paiement & Sécurité</h4>
-                    <ul class="list-group list-left">
-                        <li class="list-group-item">
-                            <img src="images/visa.mc-logo.jpg" width="100%">
-                        </li>
-                        <li class="list-group-item">
-                            <img src="images/logo-payzone.gif" width="50%">
-                        </li>
-                        <li class="list-group-item">
-                            <img src="images/GeoTrust-logo.png" width="50%">
-                        </li>
-                        <li class="list-group-item">
-                            <img src="images/tripadvisor 2.png" width="60%">
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                    <ul class="list-inline social-box">
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                    <h6>© Zineb Voyages</h6>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-</footer>
-<!-- End footer -->
-<script src="js/jquery.min.js" type="text/javascript">
-</script>
-<script src="js/bootstrap.min.js" type="text/javascript">
-</script>
-<script src="js/recherche_vol.js" type="text/javascript">
-</script>
-</body>
-</html>
+<!-- Start Footer -->
+<?php include('footer.php') ?>
+<!-- End Footer -->

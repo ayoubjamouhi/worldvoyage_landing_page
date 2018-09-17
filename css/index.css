@@ -30,7 +30,7 @@ main section.search .search-tab .label {
   border-right: 1px solid #ddd;
 }
 main section.search .search-tab .label i {
-  color: var(--secondary-color);
+  color: #000;
 }
 main section.search .search-tab label {
   text-transform: uppercase;
@@ -72,13 +72,18 @@ main section.search .search-tab .box-bottom-info-content1 .column1 {
   margin-bottom: 6px;
 }
 main section.search .search-tab form button {
-  background-color: var(--fourty-color);
-  border: 0;
+  /*background-color: rgba(0,0,0,0.3);*/
+  background: transparent;
+  border: 1px solid rgba(0,0,0,1);
+  color: rgba(0,0,0,1);
+/*  border: 0;
+*/  border-radius: 0
 }
-
 main section.search .search-tab form button:hover {
   background-color: var(--theird-color);
-}
+  color: var(--secondary-color);
+}0.6
+
 main section.search .search-tab .box-bottom-info-content2 {
   padding: 10px;
   display: none;

@@ -4,7 +4,9 @@
   width: 83%;
 }
 /* Boostrap */
-
+header section.slider {
+	display: none
+}
 /* Start Main */
 main{
 
@@ -16,7 +18,7 @@ main .top-main{
   -webkit-background-size: cover;
   background-size: cover; 
   min-height: 939px;
-  padding: 94px;
+  padding: 169px 96px;
 }
 main .top-main .form-contact{
 	background-color: var(--theird-color);
